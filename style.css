@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+*{
+    color: #333;
+}
+
+/*2. 태그 선택자(tag selector) : 1개가 아닌 모두~*/
+p {
+    background-color: olivedrab;
+    color: white;
+}
+
+/* 3. 클래서 선택자(class selector) : 여러번 반복, 재사용*/
+
+    .padding{
+        padding: 10px 5px;
+    }
+    .border{
+        border: 1px solid #333;
+    }
+
+/* 4. 아이디 선택자(id selector) : 문서 내에서 한번만 사용*/
+body{
+    background-color: lightyellow;
+}
+#wrap {
+    background-color: white;
+    border: 1px dotted #555;
+    padding: 10px 20px;
+    margin: 50px;
+}
+
+/* 5. 그룹 선택자(group selector)*/
+p, h2, .border{
+    border-width: 3px;      /* 선 -두께*/
+    border-style: dashed;   /* 선 -종류*/
+    margin: 15px;           /* 여백 크기*/
+}
